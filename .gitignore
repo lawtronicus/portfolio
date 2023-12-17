@@ -1,4 +1,4 @@
-node_modules/
+/node_modules
 .htmlhintrc
 .DS_Store
- build/.DS_Store
+build/.DS_Store
