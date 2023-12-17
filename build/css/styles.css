@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.5fr 1fr;
+    grid-template-areas:
+    "img greeting"
+    "img portfolio-link";
+}
+
+.profile-picture {
+    grid-area: img;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 120px;
+}
+
+#profile-image {
+    border-radius: 50%;
+    width: 280px;
+    height: 280px;
+    transition: transform 0.3s ease;
+}
+
+.greeting {
+    grid-area: greeting;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 8px;
+    overflow: auto;
+}
+
+.greeting > h1,h2 {
+    font-weight: 200;
+}
+
+#web {
+    background-color: var(--accent-color);
+    color: var(--color-primary);
+}
+
+.portfolio-link {
+    grid-area: portfolio-link;
+    display: flex;
+    align-items: start;
+}
+
+.portfolio-link > a {
+    padding-top: 24px;
+    text-decoration: none;
+    border-bottom: 2px solid var(--color-primary);
+    padding-bottom: 4px;
+}
+
+.portfolio-link > a:hover, .portfolio-link > a:focus {
+    color: var(--accent-color);
+}
+
+@media all and (max-width: 500px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 48px 24px;
+    }
+    .profile-picture {
+        padding-right: 0;
+        align-self: center;
+    }
+}

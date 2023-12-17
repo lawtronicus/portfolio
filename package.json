@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "A personal portfolio website showcasing my projects, skills, and professional experience.",
+  "main": "stylelint.config.js",
+  "scripts": {
+    "build-css": "postcss css/*.css --dir build/css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "postcss-cli": "^11.0.0",
+    "postcss-preset-env": "^9.3.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 4 versions",
+    "not dead"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^10.4.16"
+  }
+}

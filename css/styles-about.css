@@ -1,0 +1,157 @@
+main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+}
+
+h2 {
+    max-width: 750px;
+}
+
+caption {
+    font-weight: 900;
+}
+
+table {
+    max-width: 1250px;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-shadow: 4px 4px 8px #999;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+thead {
+    background-color: var(--color-primary);
+}
+
+th {
+    color: var( --color-background);
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--color-secondary-powder-blue);
+}
+
+/*tbody tr:nth-child(even) > td {
+    color: var(--color-secondary-powder-blue);
+}*/
+
+tbody tr:hover {
+    background-color: var(--accent-color);
+}
+
+tbody tr:hover > td {
+    color: var(--text-color);
+}
+
+svg {
+    padding-top: 24px;
+    padding-left: 48px;
+    padding-right: 48px;
+    background-color: #341c04;
+}
+
+.seoul{
+    width: 80%;
+    height: auto;
+}
+
+.sun {
+    animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes color-change {
+    from {
+        fill: #ebd38d;
+    }
+    to {
+        fill: #ee5300;
+    }
+}
+
+@keyframes fallAndFlip {
+    0% {
+        transform: translate(0px,0px) rotateY(0deg);
+    }
+    50% {
+        transform: translate(0px, 350px) rotateY(180deg);
+    }
+    100% {
+        transform: translate(0px, 750px) rotateY(360deg);
+    }
+}
+
+.blossom1 {
+    animation: fallAndFlip 4s linear infinite;
+    transform-origin: 10% 10%;
+}
+
+.blossom2 {
+    animation: fallAndFlip 4s linear infinite;
+    transform-origin: 50% 50%;
+}
+
+.blossom3 {
+    animation: fallAndFlip 6s linear infinite;
+    transform-origin: 80% 80%;
+}
+
+.blossom4 {
+    animation: fallAndFlip 5s linear infinite;
+    transform-origin: 30% 30%;
+}
+
+.blossom5 {
+    animation: fallAndFlip 4s linear infinite;
+    transform-origin: 55% 55%;
+}
+
+.blossom6 {
+    animation: fallAndFlip 5s linear infinite;
+    transform-origin: 70% 70%;
+}
+
+.blossom7 {
+    animation: fallAndFlip 5s linear infinite;
+    transform-origin: 90% 80%;
+}
+
+.blossom8 {
+    animation: fallAndFlip 5s linear infinite;
+    transform-origin: 10% 10%;
+}
+
+.blossom9 {
+    animation: fallAndFlip 5s linear infinite;
+    transform-origin: 40% 40%;
+}
+
+.blossom10 {
+    animation: fallAndFlip 5s linear infinite;
+    transform-origin: 50% 50%;
+}
+
+.blossom11 {
+    animation: fallAndFlip 5s linear infinite;
+    transform-origin: 70% 70%;
+}
+
+.blossom12 {
+    animation: fallAndFlip 5s linear infinite;
+    transform-origin: 70% 70%;
+}
+
+caption {
+    font-size: 24px;
+}
