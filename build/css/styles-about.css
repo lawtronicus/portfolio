@@ -63,7 +63,7 @@ svg {
 }
 
 .seoul{
-    width: 80%;
+    max-width: 80%;
     height: auto;
 }
 
