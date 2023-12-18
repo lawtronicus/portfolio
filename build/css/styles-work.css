@@ -14,7 +14,7 @@ main {
 
 .portfolio-grid__item {
     background-color: var(--color-secondary-powder-blue);
-    padding: 8px 16px 16px 16px;
+    padding: 8px 16px 16px;
     border-radius: 12px;
     display: grid;
     grid-template-columns: 1fr;

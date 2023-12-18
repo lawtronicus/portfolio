@@ -75,6 +75,7 @@ svg {
     from {
         fill: #ebd38d;
     }
+
     to {
         fill: #ee5300;
     }
@@ -84,9 +85,11 @@ svg {
     0% {
         transform: translate(0px,0px) rotateY(0deg);
     }
+
     50% {
         transform: translate(0px, 350px) rotateY(180deg);
     }
+    
     100% {
         transform: translate(0px, 750px) rotateY(360deg);
     }
